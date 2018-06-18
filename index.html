@@ -262,125 +262,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/16/HDU-1001/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yulin1998">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yulin1998">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/16/HDU-1001/" itemprop="url">HDU 1001</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-16T21:54:12+08:00">
-                2018-06-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/16/HDU-1000/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -453,12 +334,35 @@
         
           
             <p>在学期的中旬，我突然决定要自己学习c语言，刚好我在csdn上发现了一位大佬，于是我问就问了问他，大佬对我说，直接去刷题，不需要看那些讲基础语法的书，如果做不出来就自己到网上去搜。我当时有点懵逼，心想大佬们难道都是这样的吗？不过想归想后来我就到了她给我推荐的网站去刷题了，大佬叫我从第11页开始写，但是我这个人有强迫症，所以我就从第一页开始写，因为我在这之前从来没有在这种online judge上刷过题，所以根本不知道里面的水有多深，不过当时我看第一题很简单，就是要求两个数相加求和，当时我心中大喜，然而就这一题我做了很久很久都没有AC（所谓的AC是指accepted，当你在hdu上面做完题的时候，需要在线提交，提交完以后，这个online judge系统会随机给出数据进行测试，如果对就会显示accepted，如果错误就会显示wrong answer），后来我不得已到网上去搜答案，发现不只是我，很多人都被这道题给坑害了，最主要的就是里面有一句关键语句不知道，导致虽然你的程序逻辑正确，但就是没办法AC。所以今天我就说一说那道题中的关键语句，那一道题如下：</p>
-<p>##Problem Description</p>
-<p>###Calculate A + B.</p>
-<p>##Input</p>
-<p>###Each line will contain two integers A and B. Process to end of file</p>
-<p>##Output</p>
-<p>###For each case, output A + B in one line.</p>
+<p>Problem Description</p>
+<p>Calculate A + B.</p>
+<p>Input</p>
+<p>Each line will contain two integers A and B. Process to end of file</p>
+<p>Output</p>
+<p>For each case, output A + B in one line.</p>
+<p>Sample Input</p>
+<p>1 1</p>
+<p>Sample Output</p>
+<p>2</p>
+<p>对于这道题本来其逻辑很简单的，但是因为我们平时学的与这种竞赛还是有很多的不同，所以有一些在比赛中很平常的语句我们很可能都没见过。在这道题上面我学到的第一个这样的语句就是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(scanf(&quot; &quot;),&amp;n)!=EOF</span><br></pre></td></tr></table></figure>
+<p>这个语句是我在网上搜了之后我才知道的，开始一直不理解，后来又看了一些其他人的解释感觉有点明白，后来突然感觉自己想通了，我们平时编程写程序在运行的时候，基本上都是我们输入相应的实验数据然后程序只能运行一次然后结果，或者是我们利用循环结构控制程序运行的次数，但是这种方式也必须要求我们在输入参数时，要为控制程序运行次数的变量给定一个确切的值，然而如果认真阅读题目我们就能发现，题目中并没有指明程序只运行一次，也就是说一旦程序开始以后我们能够反复的输入数据然后得到相应的结果除非我们输入特定的值不然程序就不会停止。</p>
+<p>在上述的语句中EOF是指end of file,也就是文件的末尾，其代表的值是-1，语句中的scanf(“%d”, &amp;n) 是从标准输入读入一个整数赋值给n，并且返回值是读入的值。比如说如果n的值被成功读入，则返回值是1，如果未成功读入，则返回值是0。同样的当有多个变量也是一个道理，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scanf(&quot;%d%d&quot;, &amp;m,&amp;n)</span><br></pre></td></tr></table></figure>
+<p>如果m，n成功读入，返回值为2</p>
+<p>其中一个成功读入返回值为1</p>
+<p>都未成功读入，返回值为0；</p>
+<p>整个完整语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(scanf(&quot; &quot;),&amp;n)!=EOF</span><br></pre></td></tr></table></figure>
+<p>表达的意思是直到处理到文件的末尾，则程序结束。</p>
+<p>如果语句是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(scanf(&quot;%d&quot;,&amp;n)!=EOF,n)</span><br></pre></td></tr></table></figure>
+<p>则是表达如果处理到文件末尾或者是读取的内容发生错误，则结束程序。</p>
+<p>不同的数据类型这条语句也有一些细微的差别，如果是对于一个整型变量而言的话应该是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(scanf(&quot;%d&quot;,&amp;n)!=EOF)</span><br></pre></td></tr></table></figure>
+<p>而对于一个字符型变量str来讲则应该是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(scanf(&quot;%c&quot;,str)!=EOF)</span><br></pre></td></tr></table></figure>
+<p>这里需要注意的是%c也可以换成%s，%c的意思是对字符型变量的输入是一个一个输入的，而%s的意思则是对字符型变量的输入是一串一串的。</p>
 
           
         
@@ -837,7 +741,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
