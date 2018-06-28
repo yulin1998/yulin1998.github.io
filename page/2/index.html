@@ -262,6 +262,601 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/HDU-2006/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yulin1998">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yulin1998">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/27/HDU-2006/" itemprop="url">HDU 2006</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T08:45:31+08:00">
+                2018-06-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HDU/" itemprop="url" rel="index">
+                    <span itemprop="name">HDU</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Problem Description<br>给你n个整数，求他们中所有奇数的乘积。</p>
+<p>Input<br>输入数据包含多个测试实例，每个测试实例占一行，每行的第一个数为n，表示本组数据一共有n个，接着是n个整数，你可以假设每组数据必定至少存在一个奇数。</p>
+<p>Output<br>输出每组数中的所有奇数的乘积，对于测试实例，输出一行。</p>
+<p>Sample Input<br>3 1 2 3<br>4 2 3 4 5</p>
+<p>Sample Output<br>3<br>15</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n,a,b;</span><br><span class="line">    while(scanf(&quot;%d&quot;,&amp;n)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        a=1;</span><br><span class="line">        while(n--)//因为要对n个数进行判断和操作，所以这里以n自减为条件，进行循环</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d&quot;,&amp;b);</span><br><span class="line">            if(b%2==1)</span><br><span class="line">                a=a*b;</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;%d\n&quot;,a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注意以上while循环中的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=1;</span><br></pre></td></tr></table></figure></p>
+<p>如果没有该条语句，则每一次循环结束后，在准备执行下一次循环的时候，上一次循环的值依然保留在a中，所以我们必须在每一次循环执行时就要重新对a的值进行初始化，不然a的值会累乘。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/HDU-2005/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yulin1998">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yulin1998">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/27/HDU-2005/" itemprop="url">HDU 2005</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T08:45:19+08:00">
+                2018-06-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HDU/" itemprop="url" rel="index">
+                    <span itemprop="name">HDU</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Problem Description<br>给定一个日期，输出这个日期是该年的第几天。</p>
+<p>Input<br>输入数据有多组，每组占一行，数据格式为YYYY/MM/DD组成，具体参见sample input ,另外，可以向你确保所有的输入数据是合法的。</p>
+<p>Output<br>对于每组输入数据，输出一行，表示该日期是该年的第几天。</p>
+<p>Sample Input<br>1985/1/20<br>2006/3/12</p>
+<p>Sample Output<br>20<br>71</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int a,b,c,t=0;</span><br><span class="line">    while(scanf(&quot;%d/%d/%d&quot;,&amp;a,&amp;b,&amp;c)!=EOF)//这里要注意题中对输入的要求</span><br><span class="line">    &#123;</span><br><span class="line">        switch(b)//这里是按照非闰年的标准来计算的</span><br><span class="line">        &#123;</span><br><span class="line">            case 1:t=c;break;</span><br><span class="line">            case 2:t=31+c;break;</span><br><span class="line">            case 3:t=31+28+c;break;</span><br><span class="line">            case 4:t=31+28+31+c;break;</span><br><span class="line">            case 5:t=31+28+31+30+c;break;</span><br><span class="line">            case 6:t=31+28+31+30+31+c;break;</span><br><span class="line">            case 7:t=31+28+31+30+31+30+c;break;</span><br><span class="line">            case 8:t=31+28+31+30+31+30+31+c;break;</span><br><span class="line">            case 9:t=31+28+31+30+31+30+31+31+c;break;</span><br><span class="line">            case 10:t=31+28+31+30+31+30+31+31+30+c;break;</span><br><span class="line">            case 11:t=31+28+31+30+31+30+31+31+30+31+c;break;</span><br><span class="line">            case 12:t=31+28+31+30+31+30+31+31+30+31+30+c;break;</span><br><span class="line">        &#125;</span><br><span class="line">        if((a%400==0)||(a%4==0&amp;&amp;a%100!=0))//判断闰年的条件</span><br><span class="line">        &#123;</span><br><span class="line">            if(b&lt;=2)//当月份小于等于2时，闰年与非闰年都一样，直接输出</span><br><span class="line">                printf(&quot;%d\n&quot;,t);</span><br><span class="line">            if(b&gt;2)</span><br><span class="line">                printf(&quot;%d\n&quot;,t+1);//当月份大于二的时候，闰年要在非闰年的基础上增加1天</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">            printf(&quot;%d\n&quot;,t);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>关于这道题要说的有两点：<br>1.这道题还可以用其他方法进行解决，比如数组+循环</p>
+<p>2.关于闰年的判断条件：最开始我一直以为只要是年份是4的整数倍就可以判断为闰年，但后来发现闰年的评判标准有两种情况。</p>
+<p>第一种是：如果年份不是100的整数倍，那么只要年份是4的整数倍就是闰年，即a%4==0&amp;&amp;a%100!=0。</p>
+<p>第二种是：当年份是100的整数倍时，那么如果年份是400的整数倍，该年就是闰年，即a%400==0。<br>如果按照我最开始的判断方法，则1900年也应该是闰年，但实则不是。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/HDU-2004/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yulin1998">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yulin1998">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/27/HDU-2004/" itemprop="url">HDU 2004</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T08:24:34+08:00">
+                2018-06-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HDU/" itemprop="url" rel="index">
+                    <span itemprop="name">HDU</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Problem Description<br>输入一个百分制的成绩t，将其转换成对应的等级，具体转换规则如下：<br>90~100为A;<br>80~89为B;<br>70~79为C;<br>60~69为D;<br>0~59为E;</p>
+<p>Input<br>输入数据有多组，每组占一行，由一个整数组成。</p>
+<p>Output<br>对于每组输入数据，输出一行。如果输入数据不在0~100范围内，请输出一行：“Score is error!”。</p>
+<p>Sample Input<br>56<br>67<br>100<br>123</p>
+<p>Sample Output<br>E<br>D<br>A<br>Score is error!</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    while(scanf(&quot;%d&quot;,&amp;n)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        if(n&gt;=90&amp;&amp;n&lt;=100)</span><br><span class="line">            printf(&quot;A\n&quot;);</span><br><span class="line">        if(n&gt;=80&amp;&amp;n&lt;=89)</span><br><span class="line">            printf(&quot;B\n&quot;);</span><br><span class="line">        if(n&gt;=70&amp;&amp;n&lt;=79)</span><br><span class="line">            printf(&quot;C\n&quot;);</span><br><span class="line">        if(n&gt;=60&amp;&amp;n&lt;=69)</span><br><span class="line">            printf(&quot;D\n&quot;);</span><br><span class="line">        if(n&gt;=0&amp;&amp;n&lt;=59)</span><br><span class="line">            printf(&quot;E\n&quot;);</span><br><span class="line">        if(n&gt;100||n&lt;0)</span><br><span class="line">            printf(&quot;Score is error!\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这道题很显然还可以利用c语言的switch语句来做。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/HDU-2003/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yulin1998">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yulin1998">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/27/HDU-2003/" itemprop="url">HDU 2003</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T08:24:00+08:00">
+                2018-06-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HDU/" itemprop="url" rel="index">
+                    <span itemprop="name">HDU</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Problem Description<br>求实数的绝对值。</p>
+<p>Input<br>输入数据有多组，每组占一行，每行包含一个实数。</p>
+<p>Output<br>对于每组输入数据，输出它的绝对值，要求每组数据输出一行，结果保留两位小数。 </p>
+<p>Sample Input<br>123<br>-234.00 </p>
+<p>Sample Output<br>123.00<br>234.00</p>
+<p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    double a;</span><br><span class="line">    while(scanf(&quot;%lf\n&quot;,&amp;a)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        if(a&lt;0)</span><br><span class="line">            a=-a;</span><br><span class="line">            printf(&quot;%.2lf\n&quot;,a);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/HDU-2002/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1227,7 +1822,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
